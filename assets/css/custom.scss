@@ -1,0 +1,690 @@
+@import "variables";
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* Body */
+body {
+    font-family: $roboto;
+    font-size: $body-02;
+    line-height: 27.2px;
+    color: $body-color;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $roboto;
+}
+
+h1 {
+    font-size: $heading-01;
+    font-weight: $font-700;
+    line-height: 61.6px;
+}
+
+h2 {
+    font-size: $heading-02;
+    font-weight: $font-700;
+    line-height: 52.8px;
+}
+
+h3 {
+    font-size: $heading-03;
+    font-weight: $font-700;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: $heading-04;
+    font-weight: $font-700;
+    line-height: 37.24px;
+}
+
+h5 {
+    font-size: $heading-05;
+    font-weight: $font-600;
+    line-height: 28px;
+}
+
+h6 {
+    font-size: $heading-06;
+    font-weight: $font-600;
+    line-height: 22.4px;
+}
+
+/* Subtitles */
+
+.subtitle-regular-1 {
+    font-size: $subtitle-regular-1;
+    font-weight: $font-400;
+    line-height: 32px;
+}
+
+.subtitle-bold-1 {
+    font-size: $subtitle-bold-1;
+    font-weight: $font-600;
+    line-height: 25.2px;
+}
+
+.subtitle-bold-2 {
+    font-size: $subtitle-bold-2;
+    font-weight: $font-600;
+    line-height: 30.8x;
+}
+
+/* Custom classes */
+
+.section-style-h2 {
+
+    padding-bottom: 22px;
+    margin-bottom: 0px;
+    position: relative;
+    display: inline-block;
+
+}
+
+.section-style-1 {
+    
+    h2 {
+
+        @extend .section-style-h2;
+
+        &::before {
+            content: url(../img/svg/headline-1.svg);
+            position: absolute;
+            top: -25px;
+            left: -55px;
+        }
+
+        &::after {
+            content: url(../img/svg/headline-2.svg);
+            position: absolute;
+            right: -55px;
+            top: 25px;
+        }
+    }    
+}
+
+.section-style-2 {
+    
+    h2 {
+
+        @extend .section-style-h2;
+
+        &::before {
+            content: url(../img/svg/headline-3.svg);
+            position: absolute;
+            top: -25px;
+            left: -55px;
+        }
+
+        &::after {
+            content: url(../img/svg/headline-4.svg);
+            position: absolute;
+            right: -55px;
+            top: 25px;
+        }
+    }    
+}
+
+.section-style-3 {
+    
+    h3 {
+
+        @extend .section-style-h2;
+
+        &::before {
+            content: url(../img/svg/headline-1.svg);
+            position: absolute;
+            top: -25px;
+            left: -55px;
+        }
+    }    
+}
+
+.subtitle {
+    font-size: $body-01;
+    font-weight: $font-400;
+    line-height: 30.6px;
+    max-width: 570px;
+    color: $black-600;
+    margin-bottom: 0px;
+}
+
+/* Custom margins & paddings */
+
+.p-top-30 {
+    padding-top: $padding-top-1;
+}
+
+.p-top-70 {
+    padding-top: $padding-top-2;
+}
+
+.p-top-120 {
+    padding-top: $padding-top-3;
+}
+
+.p-top-45 {
+    padding-top: $padding-top-4;
+}
+
+.section-pad {
+    padding: $section-pad;
+}
+
+.row >* {
+    padding-right: calc(var(--bs-gutter-x) * 1);
+    padding-left: calc(var(--bs-gutter-x) * 1);
+}
+
+/* Custom buttons */
+
+.btn {
+    padding: 15px 36px;
+    border-radius: 5px;
+    color: $white;
+    font-size: $body-02;
+    font-weight: $font-500;
+    line-height: 22.4px;
+    text-decoration: none;
+    transition: ease-in 0.3s;
+    letter-spacing: 0.02rem;   
+}
+
+.btn:focus {
+    box-shadow: none
+}
+
+.btn__1 {
+    @extend .btn;
+    background: $primary;
+    border: 1px solid $primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white;
+        background: rgba($primary, 0.1);
+    }
+}
+
+.btn__2 {
+    @extend .btn;
+    border: 1px solid $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white;
+        background: rgba($white, 0.1); 
+    }   
+}
+
+.custom-btn {
+    font-size: $body-02;
+    font-weight: $font-500;
+    position: relative;
+    display: inline-block;
+    line-height: 22.4px;
+    color: $body-color;
+    text-decoration: none;
+    transition: ease-in 0.3s;
+}
+
+.custom-btn::before {
+    content: "\F138";
+    font-family: 'bootstrap-icons';
+    position: absolute;
+    font-size: 14px;
+    right: -25px;
+    font-weight: $font-700;
+}
+
+/* Header */
+
+.header {
+    background-image: url(../img/svg/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        color: $white;
+    }
+
+    p {
+        color: $white;
+        opacity: 0.8;
+        max-width: 520px;
+    }
+    
+    &--button .list-inline-item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+/* Search */
+
+#search .btn__1 {
+    padding: 19px 36px;
+}
+
+#search .btn__1:hover,
+#search .btn__1:focus,
+#search .btn__1:active {
+    background: rgba($primary, 0.8);
+    color: $white;
+}
+
+#search input {
+    font-size: $body-03;
+    font-weight: $font-400;
+    margin-right: 10px;
+    border: 1px solid #D2D2D3;
+    background: #F8F9F9;
+    border-radius: 5px;
+    padding: 0px 23px;
+    text-indent: 25px;
+    color: $black-400;
+    box-shadow: none;
+
+    &::placeholder {
+        color: $black-400;
+    }
+}
+
+.search-block {
+    max-width: 1070px;
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
+    padding: 50px 60px 40px 60px;
+    margin-top: -100px;
+
+    i {
+        position: absolute;
+        left: 20px;
+        top: 25%;
+        z-index: 10;
+        color: $black-400;     
+    }
+
+    .domain-name {
+        font-size: $body-03;
+        font-weight: $font-500;
+        color: $black-500;
+        padding-top: $padding-top-1;
+
+        ul {
+            margin-bottom: 0px;
+        }
+
+        .list-inline-item:not(:last-child) {
+            margin-right: 68.25px;
+        }
+    }
+}
+
+/* Benefits */
+
+.benefits-block {
+
+    h3 {
+        font-size: $subtitle-bold-2;
+        font-weight: $font-700;
+        line-height: 31.2px;
+        padding-bottom: 20px;
+    }
+    
+    p {
+        font-size: $body-02;
+        font-weight: 400;
+        line-height: 27.2px;
+        color: $black-600;
+        margin-bottom: 0;
+    }
+
+    img {
+        margin-top: -5px;
+        margin-right: 5px;
+    }
+}
+
+/* Service */
+
+#service {
+
+    background: $bg-3;
+
+}
+
+.service-block {
+    background: $white;
+    padding: 55px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 20px -2px rgba(33, 40, 51, 0.05);
+
+    img {
+        width: 70px;
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        font-size: $subtitle-bold-2;
+        font-weight: $font-700;
+        line-height: 31.2px;
+        padding-bottom: 15px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: $body-02;
+        font-weight: 400;
+        line-height: 27.2px;
+        color: $black-600;
+        margin-bottom: 0;
+    }
+
+    .service-block-btn {
+        @extend .custom-btn;
+        margin-top: 40px;
+        color: $body-color;
+
+        a:hover {
+            color: $primary;
+        }    
+    }
+
+}
+
+/* Features */
+
+.subtitle-1 {
+
+    p {
+        font-weight: $font-500;
+        font-size: $heading-05;
+        line-height: 32px;
+        color: $black-700;
+        margin-bottom: 0;        
+    }
+}
+
+.subtitle-2 {
+
+    h3 {
+
+        font-size: $heading-02;
+        font-weight: $font-700;
+        line-height: 52.8px;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-weight: $font-400;
+        font-size: $body-01;
+        line-height: 30.6px;
+        color: $black-700;
+        margin-bottom: 0;
+    }
+}
+
+.features-detail {
+
+    h5 {
+        font-size: $heading-05;
+        font-weight: $font-600;
+        line-height: 26px;
+        color: $body-color;
+        padding-bottom: 15px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: $body-02;
+        font-weight: $font-400;
+        line-height: 27.2px;
+        color: $black-600;
+        margin-bottom: 0;
+    }
+}
+
+.features-support {
+    position: relative;
+    z-index: 5;
+
+    &::before {
+        content: url(../img/svg/round.svg);
+        position: absolute;
+        z-index: -5;
+        right: 0;
+        bottom: 0;
+    }
+
+    img {
+        width: 750px;
+    }
+}
+
+/* Statistics */
+
+#statistics {
+    padding: 100px 0px;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h2 {
+        font-size: $heading-03;
+        font-weight: $font-700;
+        color: $white;
+        padding-bottom: 15px;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: $heading-01;
+        font-weight: $font-700;
+        color: $white;
+        line-height: 61.6px;
+        padding-bottom: 5px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: $body-01;
+        font-weight: $font-400;
+        color: $white;
+        line-height: 30.6px;
+        margin-bottom: 0;
+    }
+}
+
+/* Plan */
+
+.plan-block {
+    position: relative;
+    background: $white;
+    padding: 60px 50px;
+    box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
+    border-radius: 10px;
+
+    .popular {
+        position: absolute;
+        background: $primary;
+        font-size: $body-03;
+        line-height: 22.4px;
+        color: $white;
+        top: 20px;
+        right: 0;
+        padding: 2px 20px 0px 20px;
+        text-transform: uppercase;
+        border-radius: 13px 0px 0px 13px;
+    }
+
+    h3 {
+        font-size: $heading-03;
+        font-weight: $font-700;
+        line-height: 40px;
+        color: $body-color;
+        margin-bottom: 0;
+        padding-bottom: 15px;
+    }
+
+    p {
+        font-size: $body-02;
+        font-weight: $font-400;
+        color: $black-600;
+        line-height: 27.2px;
+        margin-bottom: 0;
+    }
+}
+
+.package {
+    h4 {
+        font-size: $heading-05;
+        font-weight: $font-400;
+        line-height: 32px;
+        color: $body-color;
+        margin-bottom: 0;
+    }
+
+    .form-select {
+        font-size: $body-03;
+        font-weight: $font-400;
+        color: $black-600;
+        padding: 14px 35px 14px 20px;
+        margin-top: 20px;
+        border: 1px solid #D2D2D3;
+        border-radius: 5px;
+        background-image: url(../bootstrap-icons/icons/chevron-down.svg) ;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .order__btn1 {
+        @extend .btn;
+        background: $body-color;
+        color: $white;
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $white;
+            background: rgba($body-color, 0.9);
+        }        
+    }
+
+    .order__btn2 {
+        @extend .btn;
+        background: $primary;
+        color: $white;
+        display: block;
+        margin-top: 30px;
+        text-align: center;   
+        margin-bottom: 30px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $white;
+            background: rgba($primary, 0.9);
+        }        
+    }
+}
+
+.price {
+    font-size: $heading-03;
+    color: $body-color;
+    font-weight: $font-700;
+    padding-top: 10px;
+    line-height: 40px;
+
+    span {
+        color: $primary;
+    }
+
+    small {
+        font-size: .65em;
+    }
+}
+
+.package-detail-block {
+
+
+    .package-lists {
+
+        ul {
+            border-bottom: 1px solid $black-100;
+            padding-bottom: 30px;            
+        }
+
+        ul li {
+            font-size: $body-02;
+            font-weight: $font-400;
+            color: $black-700;
+            line-height: 40px;
+
+            &::before {
+                content: "\F285";
+                font-family: 'bootstrap-icons';
+                font-size: 11px;
+                font-weight: $font-700;
+                margin-right: 10px;
+                color: #1BDD2E;
+            }
+        }
+    }
+
+    .package-btn {
+        text-align: center;
+
+        .custom-btn-2.active {
+            color: $primary;
+        }
+
+        .custom-btn-2.active::after {
+            content: '\F286';
+            color: $primary;
+        }
+    }
+
+    .custom-btn-2 {
+        font-size: $body-02;
+        font-weight: $font-500;
+        color: $body-color;
+        text-decoration: none;      
+        
+        &::after {
+            content: "\F282";
+            font-family: 'bootstrap-icons';
+            font-size: 10px;
+            font-weight: $font-700;
+            margin-left: 5px;
+            color: #000;
+        }
+    }
+}
+
+/* Testimonials */
+
+#testimonials {
+
+    background: $bg-3;
+
+}
