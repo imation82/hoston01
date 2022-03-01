@@ -687,6 +687,18 @@ h6 {
 
     background: $bg-3;
 
+    .owl-dots {
+        margin-top: 60px;
+
+        .owl-dot.active span {
+            background: $primary;
+        }
+    }
+
+    // .owl-theme .owl-dots .owl-dot.active span
+
+
+
 }
 
 .testimonial-block {

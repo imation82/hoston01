@@ -627,6 +627,14 @@ h6 {
   background: #F0FAE6;
 }
 
+#testimonials .owl-dots {
+  margin-top: 60px;
+}
+
+#testimonials .owl-dots .owl-dot.active span {
+  background: #F7421E;
+}
+
 .testimonial-block {
   background: #FFFFFF;
   padding: 40px;
