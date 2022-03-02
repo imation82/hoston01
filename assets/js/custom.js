@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
 
-    $('[data-bs-toggle="collapse"]').click(function () {
+    $('.all-features').click(function () {
         $(this).toggleClass("active");
         if ($(this).hasClass("active")) {
             $(this).text("See less features");
