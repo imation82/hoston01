@@ -39,4 +39,3 @@ $(".testimonial-slider").owlCarousel({
         }
     }
 });
-

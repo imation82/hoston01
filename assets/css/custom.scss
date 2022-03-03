@@ -764,3 +764,30 @@ h6 {
         }
     }
 }
+
+/* F.A.Q */
+
+.accordion-item::before {
+    border: none;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #c8c8c8;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.accordion-item::after {
+    border: none;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid red;
+
+    a {
+        text-decoration: none;
+    }
+}
+
