@@ -372,6 +372,40 @@ h6 {
 }
 
 /* Features */
+#plan-details .accordion-item {
+  border: none;
+  border-bottom: 1px solid #D2D3D3 !important;
+}
+
+#plan-details .accordion-button {
+  padding: 30px;
+}
+
+#plan-details .accordion-button::after {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+#plan-details .accordion-button:not(.collapsed) {
+  background: #FFFFFF;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#plan-details .accordion-button:not(.collapsed)::after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+#plan-details .accordion-button:focus {
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .subtitle-1 p {
   font-weight: 500;
   font-size: 20px;
@@ -738,6 +772,14 @@ h6 {
   padding: 30px;
 }
 
+#faq .accordion .accordion-item .accordion-button::after {
+  background-image: url(../bootstrap-icons/icons/plus-lg.svg);
+}
+
+#faq .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  background-image: url(../bootstrap-icons/icons/dash-lg.svg);
+}
+
 .accordion-item.accordion-shadow {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
@@ -747,13 +789,5 @@ h6 {
 
 .accordion-item.accordion-shadow .accordion-button {
   background: #FFFFFF !important;
-}
-
-.accordion-button::after {
-  background-image: url(../bootstrap-icons/icons/plus-lg.svg);
-}
-
-.accordion-button:not(.collapsed)::after {
-  background-image: url(../bootstrap-icons/icons/dash-lg.svg);
 }
 /*# sourceMappingURL=custom.css.map */

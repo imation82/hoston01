@@ -406,6 +406,39 @@ h6 {
 
 /* Features */
 
+#plan-details {
+
+    .accordion-item {
+        border: none;
+        border-bottom: 1px solid $black-100 !important;        
+    }    
+
+    .accordion-button {
+
+        padding: 30px;
+
+        &::after {
+            order: -1;
+            margin-left: 0;
+            margin-right: 30px;
+        }
+
+        &:not(.collapsed) {
+            background: $white;
+            box-shadow: none;
+        }
+
+        &:not(.collapsed)::after {
+            transform: rotate(-90deg);
+        }
+
+        &:focus {
+            border-color: transparent;
+            box-shadow: none;
+        }
+    }
+}
+
 .subtitle-1 {
 
     p {
@@ -795,6 +828,15 @@ h6 {
                 background: #f8f9f9;
                 border-radius: 5px;
                 padding: 30px;
+                
+                &::after {
+                    background-image: url(../bootstrap-icons/icons/plus-lg.svg);
+                }
+
+                &:not(.collapsed)::after {
+                    background-image: url(../bootstrap-icons/icons/dash-lg.svg);
+                }
+
             }
         }
     }
@@ -808,10 +850,3 @@ h6 {
         background: $white !important;
     }
 }
-.accordion-button::after {
-    background-image: url(../bootstrap-icons/icons/plus-lg.svg);
-    
-  }
-  .accordion-button:not(.collapsed)::after {
-    background-image: url(../bootstrap-icons/icons/dash-lg.svg);
-  }
