@@ -709,27 +709,51 @@ h6 {
 }
 
 /* F.A.Q */
-.accordion-item::before {
+#faq .accordion .accordion-item {
   border: none;
-  background: #ffffff;
-  border-radius: 5px;
   margin-bottom: 20px;
-  border: 1px solid #c8c8c8;
 }
 
-.accordion-item::before a {
-  text-decoration: none;
+#faq .accordion .accordion-item .card-body {
+  padding: 0px 30px 30px 30px;
 }
 
-.accordion-item::after {
-  border: none;
-  background: #ffffff;
+#faq .accordion .accordion-item p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.6px;
+  margin-bottom: 0px;
+  color: #636466;
+}
+
+#faq .accordion .accordion-item .accordion-button {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30.8px;
+  color: #202124;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #f8f9f9;
   border-radius: 5px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid red;
+  padding: 30px;
 }
 
-.accordion-item::after a {
-  text-decoration: none;
+.accordion-item.accordion-shadow {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
+          box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
+  margin-bottom: 20px;
+}
+
+.accordion-item.accordion-shadow .accordion-button {
+  background: #FFFFFF !important;
+}
+
+.accordion-button::after {
+  background-image: url(../bootstrap-icons/icons/plus-lg.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../bootstrap-icons/icons/dash-lg.svg);
 }
 /*# sourceMappingURL=custom.css.map */

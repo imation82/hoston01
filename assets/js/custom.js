@@ -13,29 +13,46 @@ $(document).ready(function () {
 
 });
 
-$(".testimonial-slider").owlCarousel({	
-    items : 3,
+$(".testimonial-slider").owlCarousel({
+    items: 3,
     margin: 20,
     smartSpeed: 1000,
-    slideSpeed : 500,
+    slideSpeed: 500,
     mouseDrag: true,
     dots: true,
-	loop: true,
-    responsiveClass:true,      
-    autoplay : true,
+    loop: true,
+    responsiveClass: true,
+    autoplay: true,
     nav: false,
-    responsive:{
-        0:{
+    responsive: {
+        0: {
             items: 1
         },
-        481:{
+        481: {
             items: 1
         },
-        768:{
+        768: {
             items: 2
         },
-        992:{
+        992: {
             items: 3
         }
     }
+});
+
+
+$('#faq-left')
+    .on('show.bs.collapse', function (e) {
+        $(e.target).parent('.accordion-item').addClass('accordion-shadow');
+    })
+    .on('hide.bs.collapse', function (e) {
+        $(e.target).parent('.accordion-item').removeClass('accordion-shadow');
+});
+
+$('#faq-right')
+    .on('show.bs.collapse', function (e) {
+        $(e.target).parent('.accordion-item').addClass('accordion-shadow');
+    })
+    .on('hide.bs.collapse', function (e) {
+        $(e.target).parent('.accordion-item').removeClass('accordion-shadow');
 });

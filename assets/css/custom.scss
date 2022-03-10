@@ -767,27 +767,51 @@ h6 {
 
 /* F.A.Q */
 
-.accordion-item::before {
-    border: none;
-    background: #ffffff;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    border: 1px solid #c8c8c8;
+#faq {
+    .accordion {
+        .accordion-item {
+            
+            border: none;
+            margin-bottom: 20px;
 
-    a {
-        text-decoration: none;
+            .card-body {
+                padding: 0px 30px 30px 30px;
+            }
+
+            p {
+                font-size: $subtitle-bold-1;
+                font-weight: $font-400;
+                line-height: 30.6px;
+                margin-bottom: 0px;
+                color: $black-600;
+            }
+
+            .accordion-button {
+                font-weight: $font-600;
+                font-size: 22px;
+                line-height: 30.8px;
+                color: $body-color;
+                box-shadow: none;
+                background: #f8f9f9;
+                border-radius: 5px;
+                padding: 30px;
+            }
+        }
     }
 }
 
-.accordion-item::after {
-    border: none;
-    background: #ffffff;
-    border-radius: 5px;
+.accordion-item.accordion-shadow {
+    background: $white;
+    box-shadow: 0px 25px 60px -5px rgba(33, 40, 51, 0.12);
     margin-bottom: 20px;
-    border-bottom: 1px solid red;
-
-    a {
-        text-decoration: none;
+    .accordion-button {
+        background: $white !important;
     }
 }
-
+.accordion-button::after {
+    background-image: url(../bootstrap-icons/icons/plus-lg.svg);
+    
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url(../bootstrap-icons/icons/dash-lg.svg);
+  }
