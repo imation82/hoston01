@@ -790,4 +790,49 @@ h6 {
 .accordion-item.accordion-shadow .accordion-button {
   background: #FFFFFF !important;
 }
+
+/* Footer */
+footer {
+  background: #202124;
+  padding-bottom: 30px;
+}
+
+footer h3 {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22.4px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+
+footer .list-group {
+  border-radius: 0;
+}
+
+footer .list-group-item {
+  background: transparent;
+  color: #FFFFFF;
+  padding: 0.5rem 1rem 0.5rem 0rem;
+  border: transparent;
+}
+
+footer .list-group-item a {
+  color: #D2D3D3;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer .list-group-item a:hover {
+  color: #BCBCBD;
+}
+
+footer .footer-top {
+  padding: 40px;
+  background: linear-gradient(95.53deg, #9C18B1 -38.4%, #121567 106.67%);
+  border-radius: 10px;
+  margin-bottom: 120px;
+}
 /*# sourceMappingURL=custom.css.map */

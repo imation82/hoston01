@@ -850,3 +850,46 @@ h6 {
         background: $white !important;
     }
 }
+
+/* Footer */
+
+footer {
+    background: $body-color;
+    padding-bottom: 30px;
+
+    h3 {
+        color: $white;
+        font-weight: $font-500;
+        font-size: $body-02;
+        line-height: 22.4px;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+    }
+
+    .list-group {
+        border-radius: 0;
+    }
+
+    .list-group-item {
+        background: transparent;
+        color: $white;
+        padding: 0.5rem 1rem 0.5rem 0rem;
+        border: transparent;
+        a {
+            color: $black-100;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            &:hover {
+                color: $black-200;
+            }
+        }
+    }
+
+    .footer-top {
+        padding: 40px;
+        background: linear-gradient(95.53deg, #9C18B1 -38.4%, #121567 106.67%);
+        border-radius: 10px;
+        margin-bottom: 120px;
+    }
+}
