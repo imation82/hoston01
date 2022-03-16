@@ -16,9 +16,53 @@
     <title>HostOn 01</title>
 </head>
 
-<body>
+<body> 
 
     <!-- Header -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo-white.svg" class="logo-white" alt="Logo">
+                <img src="assets/img/logo-black.svg" class="d-none logo-black" alt="Logo">
+            </a>
+            <!-- <a class="navbar-brand" href="#"><img src="assets/img/logo-black.svg" class="d-none logo-black" alt="Logo"></a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav ms-auto navbar-main">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu fade-up">
+                            <li><a class="dropdown-item" href="#">01</a></li>
+                            <li><a class="dropdown-item" href="#">02</a></li>
+                            <li><a class="dropdown-item" href="#">03</a></li>
+                        </ul>                        
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Optional</a>
+                        <ul class="dropdown-menu fade-up">
+                            <li><a class="dropdown-item" href="#">01</a></li>
+                            <li><a class="dropdown-item" href="#">02</a></li>
+                            <li><a class="dropdown-item" href="#">03</a></li>
+                        </ul> 
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi-cart2"></i>Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi-person"></i>Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>      
     <header class="header d-flex justify-content-center align-items-center vh-100">
         <div class="container">
             <div class="row">
@@ -862,7 +906,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <img src="assets/img/logo.svg" alt="Logo">
+                    <img src="assets/img/logo-white.svg" alt="Logo">
                     <h5>&copy; 2022 hoston inc. all rights reserved.</h5>
                     <div class="copyright">                        
                         <a href="tel:03303801000"><i class="bi-phone"></i>0330 380 1000</a>

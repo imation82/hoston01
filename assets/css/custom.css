@@ -208,6 +208,56 @@ h6 {
   font-weight: 700;
 }
 
+/* Navbar & Navbar animate */
+.navbar {
+  padding: 30px 0px;
+}
+
+.navbar .navbar-brand {
+  margin-right: 0;
+}
+
+.navbar .nav-link {
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.navbar .nav-item i {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 5px;
+}
+
+.navbar-main .dropdown-toggle {
+  background-image: url(../img/svg/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.navbar-main .dropdown-toggle::after {
+  border: none;
+  margin-right: 15px;
+}
+
+.logo-white.not-visible {
+  display: none;
+}
+
+.logo-black.visible {
+  display: block !important;
+}
+
+.navbar.white {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 20px rgba(0, 0, 0, 0.12);
+}
+
+.white .nav-link {
+  color: #202124 !important;
+}
+
 /* Header */
 .header {
   background-image: url(../img/svg/bg.svg);
@@ -985,5 +1035,50 @@ h6 {
 .footer .footer-bottom img {
   width: 35px;
   height: 35px;
+}
+
+/* Media Queries */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav.navbar-main .nav-link {
+    padding-right: 0px;
+    padding-left: 8px;
+    margin-right: 45px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .navbar .dropdown-menu-end {
+    right: 0;
+    left: auto;
+  }
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin-top: 0;
+  }
+  .navbar .nav-item:hover .nav-link {
+    color: #FFFFFF;
+  }
+  .navbar .dropdown-menu.fade-down {
+    top: 80%;
+    -webkit-transform: rotateX(-75deg);
+            transform: rotateX(-75deg);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  .navbar .dropdown-menu.fade-up {
+    top: 180%;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
 }
 /*# sourceMappingURL=custom.css.map */

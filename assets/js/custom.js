@@ -13,6 +13,19 @@ $(document).ready(function () {
 
 });
 
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 30) {
+        $('.logo-white').addClass('not-visible');
+        $('.logo-black').addClass('visible');
+        $('.navbar').addClass('white');
+    } else {
+        $('.logo-white').removeClass('not-visible');
+        $('.logo-black').removeClass('visible');
+        $('.navbar').removeClass('white');
+    }
+
+});
+
 $(".testimonial-slider").owlCarousel({
     items: 3,
     margin: 20,
@@ -47,7 +60,7 @@ $('#faq-left')
     })
     .on('hide.bs.collapse', function (e) {
         $(e.target).parent('.accordion-item').removeClass('accordion-shadow');
-});
+    });
 
 $('#faq-right')
     .on('show.bs.collapse', function (e) {
@@ -55,4 +68,4 @@ $('#faq-right')
     })
     .on('hide.bs.collapse', function (e) {
         $(e.target).parent('.accordion-item').removeClass('accordion-shadow');
-});
+    });
