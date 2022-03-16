@@ -197,8 +197,6 @@ h6 {
   line-height: 22.4px;
   color: #202124;
   text-decoration: none;
-  -webkit-transition: ease-in 0.3s;
-  transition: ease-in 0.3s;
 }
 
 .custom-btn::before, .service-block .service-block-btn::before {
@@ -341,9 +339,24 @@ h6 {
           box-shadow: 0px 8px 20px -2px rgba(33, 40, 51, 0.05);
 }
 
-.service-block img {
-  width: 70px;
-  margin-bottom: 40px;
+.service-block:hover {
+  background: linear-gradient(93.88deg, #870C9B -1.94%, #1A0B75 79.12%);
+  color: #FFFFFF;
+}
+
+.service-block:hover i,
+.service-block:hover p {
+  color: #FFFFFF;
+}
+
+.service-block:hover .service-block-btn a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.service-block i {
+  font-size: 70px;
+  color: #4D4D50;
 }
 
 .service-block h3 {
@@ -351,6 +364,7 @@ h6 {
   font-weight: 700;
   line-height: 31.2px;
   padding-bottom: 15px;
+  margin-top: 40px;
   margin-bottom: 0;
 }
 
@@ -368,7 +382,7 @@ h6 {
 }
 
 .service-block .service-block-btn a:hover {
-  color: #F7421E;
+  color: #FFFFFF;
 }
 
 /* Features */
