@@ -903,7 +903,8 @@ footer {
     .social {
         i {
             font-size: $heading-05;
-            color: $white;            
+            color: $white;
+            transition: all 0.3s ease;            
         }
         li {
             margin-right: 30px !important;

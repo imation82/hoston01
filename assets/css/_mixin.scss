@@ -1,0 +1,12 @@
+
+/* Fonts */
+
+@mixin fontStyle($fontSize, $fontWeight, $fontColor, $fontHeight, $fontMargin ) {
+
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $fontColor;
+    line-height: $fontHeight;
+    margin: $fontMargin;
+
+}
