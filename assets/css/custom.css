@@ -743,6 +743,10 @@ h6 {
 }
 
 /* F.A.Q */
+#faq {
+  padding: 120px 0px 250px 0px;
+}
+
 #faq .accordion .accordion-item {
   border: none;
   margin-bottom: 20px;
@@ -794,7 +798,9 @@ h6 {
 /* Footer */
 footer {
   background: #202124;
-  padding-bottom: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 footer h3 {
@@ -805,6 +811,61 @@ footer h3 {
   text-transform: uppercase;
   padding-bottom: 30px;
   margin-bottom: 0;
+}
+
+footer h5 {
+  font-weight: 400;
+  color: #BCBCBD;
+  font-size: 14px;
+  line-height: 19.6px;
+  margin-bottom: 0;
+  margin-top: 24px;
+}
+
+footer .copyright {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+footer .copyright i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+footer .copyright a {
+  color: #FFFFFF;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer .copyright a:hover {
+  color: #BCBCBD;
+}
+
+footer .social i {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+footer .social li {
+  margin-right: 30px !important;
+}
+
+footer .social li:hover .bi-facebook {
+  color: #226def;
+}
+
+footer .social li:hover .bi-instagram {
+  color: #f54914;
+}
+
+footer .social li:hover .bi-linkedin {
+  color: #0c66be;
+}
+
+footer .social li:hover .bi-twitter {
+  color: #36aae3;
 }
 
 footer .list-group {
@@ -833,6 +894,59 @@ footer .footer-top {
   padding: 40px;
   background: linear-gradient(95.53deg, #9C18B1 -38.4%, #121567 106.67%);
   border-radius: 10px;
+  margin-top: -140px;
   margin-bottom: 120px;
+}
+
+footer .footer-top .footer-top-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-top .footer-top-block h2 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+footer .footer-top .footer-top-block h4 {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.6px;
+  margin-bottom: 0;
+}
+
+footer .footer-bottom {
+  margin-top: 120px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px 0px;
+}
+
+footer .footer-bottom .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-bottom .language img {
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+footer .footer-bottom img {
+  width: 35px;
+  height: 35px;
 }
 /*# sourceMappingURL=custom.css.map */
