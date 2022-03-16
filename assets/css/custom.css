@@ -954,6 +954,27 @@ h6 {
           align-items: center;
 }
 
+.footer .footer-bottom .language a {
+  text-decoration: none;
+}
+
+.footer .footer-bottom .language .dropdown-toggle {
+  color: #FFFFFF;
+  background-image: url(../img/svg/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.footer .footer-bottom .language .dropdown-toggle::after {
+  border: none;
+  margin-right: 25px;
+}
+
+.footer .footer-bottom .language hr {
+  opacity: 1;
+  background: #FDFDFD;
+}
+
 .footer .footer-bottom .language img {
   color: #FFFFFF;
   width: 20px;

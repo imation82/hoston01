@@ -998,6 +998,26 @@ h6 {
             display: flex;
             align-items: center;
 
+            a {
+                text-decoration: none;
+            }
+
+            .dropdown-toggle {
+                color: $white;
+                background-image: url(../img/svg/arrow-down.svg);
+                background-repeat: no-repeat;
+                background-position: right;
+                &::after {
+                    border: none;
+                    margin-right: 25px;
+                }
+            }
+
+            hr {
+                opacity: 1;
+                background: #FDFDFD;
+            }
+
             img {
                 color: $white;
                 width: 20px;
